@@ -1,5 +1,4 @@
 FROM centos:7
-MAINTAINER John Doo
 
 RUN yum -y install wget
 RUN wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u77-b03/jre-8u77-linux-x64.rpm" -O /tmp/jdk-8-linux-x64.rpm
