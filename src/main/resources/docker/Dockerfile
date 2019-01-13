@@ -6,6 +6,7 @@ RUN wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=acc
 RUN yum -y install /tmp/jdk-8-linux-x64.rpm
 ENV JAVA_HOME /usr/java/latest
 
+
 RUN mkdir /opt/helloworld
 COPY helloworld.jar /opt/helloworld/
 ENTRYPOINT ["java", "-jar", "/opt/helloworld/helloworld.jar"]
