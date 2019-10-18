@@ -34,7 +34,7 @@ dependencies {
 }
 
 docker {
-       url = 'http://docker-api:2375'
+       url = 'http://192.168.1.25:2375'
 }
 
 task copyTask(type: Copy) {
