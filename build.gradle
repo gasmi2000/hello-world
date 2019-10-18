@@ -34,7 +34,9 @@ dependencies {
 }
 
 docker {
-       url = 'http://docker-api:2375'
+
+DOCKER_HOST: tcp://localhost:2375
+     
 }
 
 task copyTask(type: Copy) {
